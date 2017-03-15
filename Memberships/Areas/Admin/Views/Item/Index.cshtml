@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Memberships.Entities.Item>
+@using Memberships.Areas.Admin.Models;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.Partial("_CreateButtonPartial")
+</p>
+<table class="table table-striped table-condensed">
+    <tr class="success">
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HTML)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WaitDays)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsFree)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HTML)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WaitDays)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsFree)
+        </td>
+        @Html.Partial("_TableButtonsPartial",
+            new SmallButtonModel { Id = item.Id })
+    </tr>
+}
+
+</table>

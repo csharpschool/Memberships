@@ -1,0 +1,106 @@
+﻿@model Memberships.Entities.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HTML)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HTML)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaitDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WaitDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemTypeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemTypeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SectionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SectionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsFree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsFree)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.Partial("_EditButtonPartial", Model.Id)
+    @Html.Partial("_BackToListButtonPartial")
+</p>
