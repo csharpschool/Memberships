@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ItemTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
@@ -219,6 +220,11 @@
     <Content Include="Areas\Admin\Views\Part\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Part\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Part\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
