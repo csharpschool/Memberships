@@ -1,0 +1,66 @@
+﻿@model Memberships.Areas.Admin.Models.SmallButtonModel
+@using Memberships.Areas.Admin.Models;
+
+<td style="width:120px;">
+    <div class="btn-group" role="group">
+        @Html.Partial("_SmallButtonPartial",
+        new SmallButtonModel
+        {
+            Action = "Edit",
+            ButtonType = "btn-primary",
+            Glyph = "pencil",
+            Text = "Edit button",
+            Id = Model.Id,
+            ItemId = Model.ItemId,
+            ProductId = Model.ProductId,
+            SubscriptionId = Model.SubscriptionId,
+            UserId = Model.UserId
+        })
+        @if (Model.UserId == null || Model.UserId.Equals(string.Empty))
+        {
+            @Html.Partial("_SmallButtonPartial",
+                 new SmallButtonModel
+                 {
+                     Action = "Details",
+                     ButtonType = "btn-success",
+                     Glyph = "list",
+                     Text = "Detail button",
+                     Id = Model.Id,
+                     ItemId = Model.ItemId,
+                     ProductId = Model.ProductId,
+                     SubscriptionId = Model.SubscriptionId,
+                     UserId = Model.UserId
+                 })
+        }
+        @if (Model.UserId != null && !Model.UserId.Equals(string.Empty))
+        {
+            @Html.Partial("_SmallButtonPartial",
+                 new SmallButtonModel
+                 {
+                     Action = "Subscriptions",
+                     ButtonType = "btn-info",
+                     Glyph = "list",
+                     Text = "Subscriptions",
+                     Id = Model.Id,
+                     ItemId = Model.ItemId,
+                     ProductId = Model.ProductId,
+                     SubscriptionId = Model.SubscriptionId,
+                     UserId = Model.UserId
+                 })
+        }
+
+        @Html.Partial("_SmallButtonPartial",
+        new SmallButtonModel
+        {
+            Action = "Delete",
+            ButtonType = "btn-danger",
+            Glyph = "trash",
+            Text = "Delete button",
+            Id = Model.Id,
+            ItemId = Model.ItemId,
+            ProductId = Model.ProductId,
+            SubscriptionId = Model.SubscriptionId,
+            UserId = Model.UserId
+        })
+    </div>
+</td>
