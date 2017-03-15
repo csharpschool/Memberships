@@ -1,0 +1,33 @@
+﻿@*@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{*@
+    <li class="dropdown" data-admin-menu>
+        <a href="#">
+            Admin
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-header">Minor Entities</li>
+            <li class="divider" />
+            <li><a href="/Admin/Section">&nbsp;&nbsp;Section</a></li>
+            <li><a href="/Admin/Part">&nbsp;&nbsp;Part</a></li>
+            <li><a href="/Admin/ItemType">&nbsp;&nbsp;Item Type</a></li>
+            <li><a href="/Admin/ProductType">&nbsp;&nbsp;Product Type</a></li>
+            <li><a href="/Admin/ProductLinkText">    &nbsp;&nbsp;Product Link Text</a></li>
+            <li class="divider" />
+            <li class="dropdown-header">Major Entities</li>
+            <li class="divider" />
+            <li><a href="/Admin/Item">&nbsp;&nbsp;Item</a></li>
+            <li><a href="/Admin/Product">&nbsp;&nbsp;Product</a></li>
+            <li><a href="/Admin/Subscription">    &nbsp;&nbsp;Subscription</a></li>
+            <li class="divider" />
+            <li class="dropdown-header">Connector Entities</li>
+            <li class="divider" />
+            <li><a href="/Admin/ProductItem">&nbsp;&nbsp;Product Item</a></li>
+            <li><a href="/Admin/SubscriptionProduct">    &nbsp;&nbsp;Subscription Product</a></li>
+            <li class="divider" />
+            <li class="dropdown-header">Users & Subscriptions</li>
+            <li class="divider" />
+            <li><a href="/Account">    &nbsp;&nbsp;Users & Subscriptions</a></li>
+        </ul>
+    </li>
+@*}*@
