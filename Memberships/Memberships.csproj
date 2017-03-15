@@ -170,6 +170,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\ItemTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -225,6 +226,11 @@
     <Content Include="Areas\Admin\Views\ItemType\Details.cshtml" />
     <Content Include="Areas\Admin\Views\ItemType\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\ItemType\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
