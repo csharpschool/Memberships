@@ -1,0 +1,63 @@
+﻿@model Memberships.Areas.Admin.Models.ProductModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductTypes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductLinkTexts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductLinkText)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger btn-sm" />
+            @Html.Partial("_BackToListButtonPartial")
+        </div>
+    }
+</div>
