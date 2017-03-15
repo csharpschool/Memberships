@@ -1,0 +1,31 @@
+﻿@model Memberships.Areas.Admin.Models.SubscriptionProductModel
+@using Memberships.Areas.Admin.Models
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Subscription Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(m => m.SubscriptionTitle)</dt>
+        <dd>@Html.DisplayFor(m => m.SubscriptionTitle)</dd>
+        <dt>@Html.DisplayNameFor(m => m.ProductTitle)</dt>
+        <dd>@Html.DisplayFor(m => m.ProductTitle)</dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger btn-sm" />
+            @Html.Partial("_EditButtonDetailPartial",
+                new EditButtonModel { SubscriptionId = Model.SubscriptionId, ProductId = Model.ProductId })
+            @Html.Partial("_BackToListButtonPartial")
+        </div>
+    }
+</div>
