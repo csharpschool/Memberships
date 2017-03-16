@@ -203,6 +203,7 @@
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\IdentityExtension.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
