@@ -16,7 +16,19 @@ namespace Memberships.Controllers
         {
             var userId = Request.IsAuthenticated ? HttpContext.User.Identity.GetUserId() : null;
             var thumbnails = await new List<ThumbnailModel>().GetProductThumbnailsAsync(userId);
-            return View();
+
+            var count = thumbnails.Count() / 4;
+            var model = new List<ThumbnailAreaModel>();
+            for (int i = 0; i <= count; i++)
+            {
+                model.Add(new ThumbnailAreaModel
+                {
+                    Title = i.Equals(0) ? "My Content" : string.Empty,
+                    Thumbnails = thumbnails.Skip(i * 4).Take(4)
+                });
+            }
+
+            return View(model);
         }
 
         public ActionResult About()

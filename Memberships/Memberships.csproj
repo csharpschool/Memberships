@@ -223,6 +223,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\csharp-for-beginners.png" />
+    <Content Include="Content\Images\csharp-zip.png" />
+    <Content Include="Content\Images\laptop.jpg" />
+    <Content Include="Content\Images\pdf.png" />
+    <Content Include="Content\Images\unit-testing.png" />
+    <Content Include="Content\Images\video.png" />
     <Content Include="Content\Logos\membership-icon-small.png" />
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\navbar.css" />
@@ -289,6 +295,7 @@
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Details.cshtml" />
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Index.cshtml" />
+    <Content Include="Content\Documents\test_pdf.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
