@@ -32,6 +32,7 @@ namespace Memberships
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new StyleBundle("~/Content/membership").Include("~/Content/navbar.css"));
 
 
         }
