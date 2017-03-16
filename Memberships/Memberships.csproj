@@ -185,6 +185,7 @@
     <Compile Include="Areas\Admin\Models\ProductModel.cs" />
     <Compile Include="Areas\Admin\Models\SmallButtonModel.cs" />
     <Compile Include="Areas\Admin\Models\SubscriptionProductModel.cs" />
+    <Compile Include="Comparers\ThumbnailEqualityComparer.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
