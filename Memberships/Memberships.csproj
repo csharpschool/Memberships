@@ -203,6 +203,7 @@
     <Compile Include="Entities\Subscription.cs" />
     <Compile Include="Entities\SubscriptionProduct.cs" />
     <Compile Include="Entities\UserSubscription.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\IdentityExtension.cs" />
