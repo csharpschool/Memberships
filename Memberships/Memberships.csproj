@@ -242,6 +242,7 @@
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\navbar.css" />
     <Content Include="Content\ProductContent.css" />
+    <Content Include="Content\RegisterCode.css" />
     <Content Include="Content\thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -369,6 +370,7 @@
     <Content Include="Views\ProductContent\_ProductSectionPartial.cshtml" />
     <Content Include="Views\ProductContent\_ProductItemRowPartial.cshtml" />
     <Content Include="Views\ProductContent\Content.cshtml" />
+    <Content Include="Views\Shared\_RegisterCodePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
