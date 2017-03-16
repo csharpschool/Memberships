@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace Memberships.Controllers
     {
         public ActionResult Index()
         {
+            var userId = Request.IsAuthenticated ? HttpContext.User.Identity.GetUserId() : null;
             return View();
         }
 
