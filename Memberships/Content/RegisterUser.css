@@ -1,0 +1,29 @@
+﻿.validation-summary-errors > ul {
+    padding-left: 15px;
+    color: red;
+}
+
+.register-user-panel *,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+    border-radius: 0px;
+}
+
+.register-user-panel input[type=text].form-control,
+.register-user-panel input[type=password].form-control {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.register-user-panel .glyphicon-user,
+.register-user-panel .glyphicon-envelope,
+.register-user-panel .glyphicon-lock {
+    background-color: white;
+    border: none;
+    padding-left: 0px;
+}
+
+.register-user-panel button {
+    margin-top: 5px;
+}
