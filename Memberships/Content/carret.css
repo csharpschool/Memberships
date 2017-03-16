@@ -1,0 +1,25 @@
+﻿.gly-rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.panel-carret .glyphicon-play.gly-rotate-90 {
+    margin-top: -1px;
+}
+
+.panel-carret .glyphicon-play {
+    margin-top: -4px;
+    margin-right: 4px;
+}
+
+.panel-carret span {
+    transition: all 0.3s ease 0s;
+    transform: rotate(90deg);
+}
+
+.panel-carret.pressed span {
+    transform: rotate(0deg);
+}

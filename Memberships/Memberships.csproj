@@ -229,6 +229,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carret.css" />
     <Content Include="Content\Images\csharp-for-beginners.png" />
     <Content Include="Content\Images\csharp-zip.png" />
     <Content Include="Content\Images\laptop.jpg" />
@@ -304,6 +305,7 @@
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Index.cshtml" />
     <Content Include="Content\Documents\test_pdf.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\carret.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -361,6 +363,8 @@
     <Content Include="Views\Account\Subscriptions.cshtml" />
     <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
     <Content Include="Views\ProductContent\Index.cshtml" />
+    <Content Include="Views\ProductContent\_ProductSectionPartial.cshtml" />
+    <Content Include="Views\ProductContent\_ProductItemRowPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

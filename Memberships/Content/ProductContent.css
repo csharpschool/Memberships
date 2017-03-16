@@ -13,3 +13,24 @@
     .pc-headline h2 {
         font-size: 22px;
     }
+
+.product-item * {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.product-item h2 {
+    margin-top: 2px;
+    font-size: 22px;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item .line-bottom {
+    border-bottom: 1px solid #E4E9F0;
+}
+
+.product-item .min-height {
+    min-height: 90px;
+}
