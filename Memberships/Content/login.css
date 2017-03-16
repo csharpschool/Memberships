@@ -1,0 +1,80 @@
+﻿a[data-logout-button] {
+    color: white;
+}
+
+.nav > li > a[data-logout-button]:hover {
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+[data-login-user-area].open {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+[data-login-user-area] .glyphicon-remove {
+    cursor: pointer;
+    color: white;
+}
+
+[data-login-user-area] {
+    border-color: #4765A0;
+}
+
+    [data-login-user-area], [data-login-user-area] * {
+        border-radius: 0px;
+    }
+
+        [data-login-user-area] .panel {
+            box-shadow: none;
+            margin-bottom: 3px;
+            min-width: 300px;
+        }
+
+        [data-login-user-area] .panel-heading {
+            margin-bottom: 7px;
+            background-color: #4765A0;
+            color: white;
+        }
+
+        [data-login-user-area] .panel-body {
+            padding-bottom: 7px;
+            padding-top: 7px;
+        }
+
+        [data-login-user-area] .glyphicon-envelope,
+        [data-login-user-area] .glyphicon-lock {
+            padding-left: 0px;
+            border: none;
+            background-color: white;
+        }
+
+        [data-login-user-area] input[type=text].form-control,
+        [data-login-user-area] input[type=password].form-control {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+.data-login-error {
+    background-color: rgba(249, 224, 223, 1);
+    border-color: rgba(208, 89, 94, 1);
+}
+
+#login-button {
+    margin-top: 3px;
+    background-color: #4765A0;
+    border-color: #4765A0;
+    color: white;
+}
+
+    #login-button:hover {
+        background-color: rgba(71, 101, 160, 0.75);
+    }
+
+[data-login-user-area] input[type=checkbox] {
+    margin-top: 12px;
+    margin-left: 27px;
+}

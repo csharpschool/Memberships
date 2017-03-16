@@ -242,6 +242,7 @@
     <Content Include="Content\Images\pdf.png" />
     <Content Include="Content\Images\unit-testing.png" />
     <Content Include="Content\Images\video.png" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\Logos\membership-icon-small.png" />
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\navbar.css" />
@@ -323,6 +324,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\JWPlayer.js" />
+    <Content Include="Scripts\login.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\RegisterUser.js" />
     <Content Include="Scripts\respond.js" />
@@ -379,6 +381,7 @@
     <Content Include="Views\ProductContent\Content.cshtml" />
     <Content Include="Views\Shared\_RegisterCodePartial.cshtml" />
     <Content Include="Views\Shared\_RegisterUserPartial.cshtml" />
+    <Content Include="Views\Shared\_LoginPanelPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

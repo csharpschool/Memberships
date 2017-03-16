@@ -1,0 +1,41 @@
+﻿@model Memberships.Models.LoginViewModel
+
+<div class="dropdown-menu dropdown-panel" data-login-user-area>
+    <div class="panel">
+        <div class="panel-heading">
+            Log In<a id="close-login" class="pull-right">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+        <div class="panel-body">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, "", new { @class = "text-danger hidden" })
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                @Html.TextBoxFor(m => m.Email, new
+           {
+               @class = "form-control email",
+               @placeholder = "Email"
+           })
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                @Html.PasswordFor(m => m.Password, new
+           {
+               @class = "form-control password",
+               @placeholder = "Password"
+           })
+            </div>
+            <div class="remember-me-checkbox">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                <span>Keep me logged in</span>
+                <button id="login-button" type="button"
+                        class="btn btn-default pull-right"
+                        data-login-action="/Account/LoginAsync"
+                        data-login-return-url="/Home/Index">
+                    Log in
+                </button>
+            </div>
+        </div>
+    </div>
+</div> 
