@@ -28,7 +28,8 @@ namespace Memberships
 
             bundles.Add(new ScriptBundle("~/bundles/ui").Include(
                       "~/Scripts/carret.js",
-                       "~/Scripts/JWPlayer.js"));
+                      "~/Scripts/JWPlayer.js",
+                      "~/Scripts/code.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
