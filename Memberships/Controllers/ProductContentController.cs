@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Memberships.Extensions;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Memberships.Controllers
@@ -12,7 +9,10 @@ namespace Memberships.Controllers
     {
         public async Task<ActionResult> Index(int id)
         {
-            return View();
+            var userId = Request.IsAuthenticated ? HttpContext.GetUserId() : null;
+            var sections = await SectionExtensions.GetProductSectionsAsync(id, userId);
+
+            return View(sections);
         }
     }
 }

@@ -206,6 +206,7 @@
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\IdentityExtension.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\SectionExtensions.cs" />
     <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -237,6 +238,7 @@
     <Content Include="Content\Logos\membership-icon-small.png" />
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\ProductContent.css" />
     <Content Include="Content\thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
